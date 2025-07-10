@@ -1,4 +1,5 @@
 dict1={"name":"hridya","age":21,"hobbies":["singing","dancing","coding"]}
+print(dict1.items())#returns the key-value pairs in tuple
 
 dict1.update({"name":"angel"})
 dict1.update({'place':"Thrissur"})

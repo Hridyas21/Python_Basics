@@ -21,3 +21,6 @@ list1.reverse() #Reverse the elements in the list
 #slicing
 print(list1[2:4]) #4th will not be included
 print(list1) 
+
+list1=[12,34,45,6,32]
+print(list1[-1:2:-1]) #start,stop,step
