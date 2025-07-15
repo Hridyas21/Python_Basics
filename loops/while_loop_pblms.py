@@ -42,8 +42,4 @@ for i in range(6,0,-1):
 for r in range(6,0,-1):
      print("* "*r," "*int(6-r))
 
-# for i in range(1,6):
-#     for j in range(1,i+1):
-#         for k in range(4,):
-#             print(i+k,end=" ")
-#     print("")
+
