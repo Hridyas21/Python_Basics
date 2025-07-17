@@ -11,7 +11,7 @@ list1.remove(54) #Removes the value given from the list
 list1.pop(1) #Removes element at the given index
 list1.pop() #Removes the last element ,pop also returns the removed element
 
-list1.insert(6,'devu') #Insert an element at the given index
+list1.insert(6,'devu') #Insert the given element at the given index
 
 list1.sort() #sorts the original list in ascending order
 list1.sort(reverse=True) # Sorts in descending order
