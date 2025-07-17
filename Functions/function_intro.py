@@ -1,4 +1,5 @@
 def fun():
+    #name="Hridya"  #If given like this, Always print "Hello Hridya"
     print("Hello..")
 fun() #function call
 
@@ -10,7 +11,7 @@ greet("Kichu")
 greet("Devu")
 
 def fact(num):
-    pass #placeholder, we can leave this without completeing
+    pass #placeholder, we can leave this without completing
 fact(5)
 
 #Factorial of a number using function
@@ -38,6 +39,8 @@ def is_positive(num):
         print("Negative")
 print(is_positive(-3)) #This will result "None" since there is no return type
 
+
+
 def is_positive(num):
     if(num>=0):
         return True
@@ -56,6 +59,11 @@ if is_positive(num):
 else:
     print("Number is negative")
 
+def add(a,b):
+    return a+b #return statement immediately ends the function
+    #print(a+b)--->This will not print
+#add(1,2) --->will not print since print is not given
+print(add(1,2))#--->3
 
 
 #average of numbers in a list
@@ -74,4 +82,21 @@ print(avg)
 def add(a,b):
     sum=a+b
     print(sum)
-add(a=10,b=20) #positional arguments
+add(a=10,b=20) #positional arguments 
+#add(10) ---> gives positional arguments error
+#or
+#def add(a) --->gives positional arguments error since only one parameter is defines and passing 2 arguments
+
+
+def add(*n): # *args (for non keyword arguments) can take multiple arguments;"args" is not a keyword
+    print(n)
+add(1,2,3)
+
+def greet(**student): # **kargs used for keyword arguments
+    print(f"Hello {student["name"]} you are {student["age"]} years old") #name and age are not directly defined , they are in dictionary "student"
+greet(name="Hridya",age=21)
+
+def sample(a,b):
+    return a,b
+a,b=sample(1,2) #unpacking the tuple into 2 variables; a=1,b=2
+print(a,b) 
