@@ -16,6 +16,9 @@ print(language.endswith('N'))
 
 print(language.count('p'))
 
+language.replace(old, new, count) #to replace part of a string with another string
+
+
 #strip
 sentence="  python is a high interpreted praogramming language  "
 print(sentence)
@@ -25,6 +28,6 @@ print(sentence.strip()) #Strip will remove the whitespaces at the ends
 #split
 print(sentence.split()) #['python', 'is', 'a', 'high', 'interpreted', 'praogramming', 'language']
 print(sentence.split('high')) #'high' will be removed and splits,['  python is a ', ' interpreted praogramming language  ']
-print(sentence.partition('high'))#('  python is a ', 'high', ' interpreted praogramming language  ')
+print(sentence.partition('high')) #('  python is a ', 'high', ' interpreted praogramming language  ')
 print(len(sentence))
 
