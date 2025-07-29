@@ -5,7 +5,7 @@ class Vehicles: #Parent class
         self.make=m
         self.model=mod
 class Car(Vehicles): #Car is the child class, Car inherits Vehicles
-    def __init__(self,c,p):
+    def __init__(self,c,p): 
         self.color=c
         self.power=p
 c1=Car("Red","151 Bhp")
