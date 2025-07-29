@@ -29,8 +29,6 @@
 # lap1.Specs("HP","16 GB")
 # lap2.Specs("Dell","4 GB")
 # print(lap2.name)
-
-
 #Constructor method
 class Laptops:
     owner="OneTeam" #class attribute; Common attribute of the class
