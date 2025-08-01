@@ -1,4 +1,4 @@
-payment_status=False #If given anything instaed of True or False it will check for NONE; If None -->True
+payment_status=False #If given anything instead of True or False it will check for NONE; If None -->True
 mark=int(input("Enter the marks:"))
 if payment_status:
      if (mark>60):

@@ -11,15 +11,14 @@ if(num%2==0):
 else:
     print(num, "is odd")
     
-leap year
+#leap year
 year=int(input("Enter the year:"))
 if (year%4==0 and year%100!=0 or year%40==0):
     print(year, "is a leap year")
 else:
     print(year, "is not a leap year")
     
-nested if
-
+#nested if
 year=int(input("Enter the year:"))
 if(year%4==0):
     if(year%100==0):
@@ -32,7 +31,7 @@ if(year%4==0):
 else:
     print(year, "is not a leap year")
     
-payment_status=False #If given anything instaed of True or False it will check for NONE; If None -->True
+payment_status=False #If given anything instead of True or False it will check for NONE; If None -->True
 mark=int(input("Enter the marks:"))
 if payment_status:
     if (mark>60):

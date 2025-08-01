@@ -9,7 +9,7 @@ print(type(a))
 #complex
 a=3j #In python, j is used for imaginary part instead of i
 print(type(a))
-#
+
 #string
 a="python"
 print(type(a))
