@@ -12,8 +12,10 @@ s=Private()
 s.sal("50000")
 
 #Private
+#Accessed only from its class
 # can't access it directly from outside the class.
 #double underscore __ to make something private.
+#In python there is no true private variable like java or C++.
 
 class Private:
     def sal(self):
@@ -26,3 +28,6 @@ s.sal()  # calls the sal() method, which sets the private variable and prints
 #print("salary is:",s.sal())
   
 #Protected
+#Can be accessed from it's class only
+#Single underscore
+#Can access directly, No such concept in python. Since it is not a fully object oriented programming language.

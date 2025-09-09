@@ -3,10 +3,11 @@
 #built in abc module is used for this
 #abc--> Absract Base Classes
 #ABC--> lets us create abstract classes
+#Implementation is in child class. Cannot create object for the parent class.
 
 from abc import ABC,abstractmethod
 
-class Parent(ABC): #Inherits from ABC so its an absract class
+class Parent(ABC): #Inherits from ABC, so its an absract class;Cannot create objectt for an abstract class.
     @abstractmethod #Used to mark methods that must be implemented in child classes
 
     def fun(self):
@@ -21,3 +22,17 @@ class Child(Parent): #Class child is called the Concrete class
 obj=Child()
 obj.Display()
 obj.fun()
+
+#Another example
+from abc import ABC,abstractmethod
+class BankPayment(ABC):
+    @abstractmethod
+    def payment(self):
+        pass
+class NetBanking(BankPayment):
+   
+    def payment(self):
+        print("Hello Everyone")
+
+ob2=NetBanking()
+ob2.payment()

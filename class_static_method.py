@@ -1,5 +1,10 @@
-from datetime import date
+#Static Method
+#Does not take self or cls.
+#Works like a normal function inside a class.
+#Cannot access object data or class data directly.
 
+
+from datetime import date
 
 class Person:
     def __init__(self, name, age):
@@ -35,12 +40,12 @@ class Cake:
 c=Cake() #In staticmethod object creation is not mandatory.
 c.is_sweet() #Can call directly using classs name
 
-#Class Method
+#Class Method ,to access or change class variables (shared by all objects). 
 class Cake():
     Bakery_name="Sweet Cakes"
     
-    @classmethod
-    def change_name(cls,new_name):
+    #@classmethod
+    def change_name(cls,new_name): #cls is not a keyword, it refers to the class
         cls.Bakery_name=new_name
         
 c=Cake()   
