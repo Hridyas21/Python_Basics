@@ -1,4 +1,4 @@
-# #File read
+#File read
 fileobject=open("sample.txt","r")
 print(fileobject.read())
 
@@ -22,3 +22,9 @@ try:
 except FileNotFoundError:
     print("Enter the valid file name")
       
+      
+      
+print("Hello\tDevelopers ") #tabspace
+print("Hello\"Developers\" ")
+
+print("hekko world.\n welcome to coding")
